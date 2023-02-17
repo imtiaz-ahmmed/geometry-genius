@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Geometric Book</title>
+
+    <!-- Googole Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <h1 id="nav-upper-title">Interactive</h1>
+                <h3 id="nav-lower-title">Geometric Book</h3>
+            </div>
+            <div>
+                <button class="header-btn">Blog</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="geometry-container">
+            <div class="geometry-components">
+                <!-- Triangle Card -->
+                <div class="geometry-component">
+                    <img src="images/triangle.png" alt="">
+                    <h3 class="card-heading">Triangle</h3>
+                    <p class="equation">Area(A) = 0.5 <span>&#215;</span>
+                        b <span>&#215;</span>
+                        h</p>
+                    <input class="input-area" type="text" placeholder="b"> <span>cm</span>
+                    <input class="input-area" type="text" placeholder="h"> <span>cm</span>
+                    <button class="calculate-btn">Calculate</button>
+                </div>
+
+                <!-- Rectangle Card -->
+                <div class="geometry-component">
+                    <img src="images/rectangle.png" alt="">
+                    <h3 class="card-heading">Rectangle</h3>
+                    <p class="equation">Area(A) = 
+                        w <span>&#215;</span>
+                        l</p>
+                    <input class="input-area" type="text" placeholder="w"> <span>cm</span>
+                    <input class="input-area" type="text" placeholder="l"> <span>cm</span>
+                    <button class="calculate-btn">Calculate</button>
+                </div>
+
+                <!-- Parallelogram Card -->
+                <div class="geometry-component">
+                    <img src="images/parallelogram.png" alt="">
+                    <h3 class="card-heading">Parallelogram</h3>
+                    <p class="equation">Area(A) = 
+                        b <span>&#215;</span>
+                        h</p>
+                    <input class="input-area" type="text" placeholder="b"> <span>cm</span>
+                    <input class="input-area" type="text" placeholder="h"> <span>cm</span>
+                    <button class="calculate-btn">Calculate</button>
+                </div>
+
+                <!-- Rhombus -->
+                <div class="geometry-component">
+                    <img src="images/rhombus.png" alt="">
+                    <h3 class="card-heading">Rhombus</h3>
+                    <p class="equation">Area(A) = 0.5 <span>&#215;</span>
+                        d<sub>1</sub> <span>&#215;</span>
+                        d<sub>2</sub></p>
+                    <input class="input-area" type="text" placeholder="d1"> <span>cm</span>
+                    <input class="input-area" type="text" placeholder="d2"> <span>cm</span>
+                    <button class="calculate-btn">Calculate</button>
+                </div>
+
+                <!-- Pentagon Card-->
+                <div class="geometry-component">
+                    <img src="images/pentagon.png" alt="">
+                    <h3 class="card-heading">Parallelogram</h3>
+                    <p class="equation">Area(A) = 0.5 <span>&#215;</span>
+                        p <span>&#215;</span>
+                        b</p>
+                    <input class="input-area" type="text" placeholder="p"> <span>cm</span>
+                    <input class="input-area" type="text" placeholder="b"> <span>cm</span>
+                    <button class="calculate-btn">Calculate</button>
+                </div>
+
+                <!-- Ellipse Card -->
+                <div class="geometry-component">
+                    <img src="images/ellipse.png" alt="">
+                    <h3 class="card-heading">Ellipse</h3>
+                    <p class="equation">Area(A) = <span id="pi">&#8508;</span>ab</p>
+                    <input class="input-area" type="text" placeholder="a"> <span>cm</span>
+                    <input class="input-area" type="text" placeholder="b"> <span>cm</span>
+                    <button class="calculate-btn">Calculate</button>
+                </div>
+
+
+            </div>
+            <div class="geometry-calculation">
+                <h2><u>Area Calculation</u></h2>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
