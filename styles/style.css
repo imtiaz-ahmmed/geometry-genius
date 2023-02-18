@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -111,11 +111,27 @@ img {
 .geometry-calculation {
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 8px;
-    width: 25%;
+    width: 20%;
     text-align: center;
-    padding: 45px;
+    padding: 10px;
 
-
+}
+#geo-heading{
+    margin-bottom: 50px;
+}
+.convert-btn{
+    background-color: #1090D8;
+    border-radius: 8px;
+    color: white;
+    padding: 8px ;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    margin-left: 10px;
+}
+.td-styles{
+    margin-bottom: 25px;
+    padding-left: 10px;
 }
 
 
