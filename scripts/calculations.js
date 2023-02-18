@@ -7,7 +7,7 @@ function showResult(value1, value2) {
 
     const tr = document.createElement('tr');
     tr.innerHTML = `
-    <td class="td-styles">${serial}</td>
+    <td class="td-styles">${serial}<span>.</span></td>
         <td class="td-styles">${value1}</td>
         <td class="td-styles" >${value2} cm<sup>2</sup></td>
         <td class="td-styles"><button class="convert-btn">Convert to m<sup>2</sup></button></td>
