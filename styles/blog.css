@@ -7,7 +7,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 header {
-margin: 20px 50px 10px;
+margin: 50px 50px 10px;
 }
 
 nav {
@@ -50,4 +50,5 @@ nav {
 .blog-answer{
     color: dimgray;
     margin-bottom: 10px;
+    text-align: justify;
 }

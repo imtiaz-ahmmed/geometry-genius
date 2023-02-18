@@ -47,6 +47,7 @@ function inputValue(value) {
     }
     else {
         alert('Wrong Input. Please Input Only Positive Numbers.(N.B. Area can not be Negative)');
+        serial -= 1;
         return inputValue();
     }
     
@@ -90,6 +91,7 @@ document.getElementById('triangle-calculate-btn').addEventListener('click', func
     serial += 1;
     const bValue = inputValue('tri-b-value');
     const hValue = inputValue('tri-h-value');
+   
     const calculatedArea = areaForTriRhomPentagon(bValue, hValue);
     const title = cardTitle('tri-card-title');
     showResult(title, calculatedArea);
