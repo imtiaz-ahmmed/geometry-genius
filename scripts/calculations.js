@@ -20,10 +20,10 @@ function showResult(value1, value2) {
       
     `;
 
-
     resultShow.appendChild(tr);
 
 }
+
 
 
 //Card-Title
