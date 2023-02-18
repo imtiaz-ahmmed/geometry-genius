@@ -13,7 +13,7 @@ function showResult(value1, value2) {
         <td class="td-styles"><button class="convert-btn">Convert to m<sup>2</sup></button></td>
       
     `;
-   
+
 
     resultShow.appendChild(tr);
 
@@ -33,14 +33,16 @@ function inputValue(value) {
     const inputValue = document.getElementById(value);
     const stringInputValue = inputValue.value;
     const numInputValue = parseFloat(stringInputValue);
-    if(numInputValue >= 0){
+
+    //Input Validation 
+    if (numInputValue >= 0) {
         return numInputValue;
     }
-    else{
+    else {
         alert('Wrong Input. Please Input Only Positive Numbers.(N.B. Area can not be Negative)');
         return inputValue();
     }
-    
+
 }
 
 //Area Calculation with 0.5
@@ -128,4 +130,17 @@ document.getElementById('ellipse-calculate-btn').addEventListener('click', funct
     showResult(title, calculatedArea);
 
 
-}) 
+})
+
+
+//Random Color
+const geometryComponents = document.querySelectorAll('.geometry-component');
+
+geometryComponents.forEach(geometryComponent => {
+  geometryComponent.addEventListener('mouseenter', function() {
+    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    geometryComponent.style.backgroundColor = "#" + randomColor;
+  });
+});
+
+  
