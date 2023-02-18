@@ -19,9 +19,15 @@ nav {
     padding: 42px;
 }
 
-#nav-title {
+#nav-upper-title {
     font-weight: 700;
     font-size: 45px;
+}
+
+#nav-lower-title {
+    font-weight: 500;
+    font-size: 30px;
+    color: #11111199;
 }
 
 
@@ -51,4 +57,17 @@ nav {
     color: dimgray;
     margin-bottom: 10px;
     text-align: justify;
+}
+
+
+/* Mobile Screen */
+@media only screen and (max-width: 576px) {
+    nav {
+
+        flex-direction: column;
+    }
+
+    .header-btn {
+        margin-top: 20px;
+    }
 }
