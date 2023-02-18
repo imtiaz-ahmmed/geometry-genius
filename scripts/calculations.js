@@ -33,35 +33,50 @@ function inputValue(value) {
     const inputValue = document.getElementById(value);
     const stringInputValue = inputValue.value;
     const numInputValue = parseFloat(stringInputValue);
-
+    
     //Input Validation 
     if (numInputValue >= 0) {
         return numInputValue;
+        
     }
     else {
         alert('Wrong Input. Please Input Only Positive Numbers.(N.B. Area can not be Negative)');
         return inputValue();
     }
+    
 
 }
 
 //Area Calculation with 0.5
 function areaForTriRhomPentagon(value1, value2) {
     const area = 0.5 * value1 * value2;
-    const finalArea = area.toFixed(2);
-    return finalArea;
+    if (Number.isInteger(area)) {
+        return area;
+      } 
+      else {
+        return area.toFixed(2);
+      }
 }
 //Area Calculation
 function areaForRectParallelo(value1, value2) {
     const area = value1 * value2;
-    const finalArea = area.toFixed(2);
-    return finalArea;
+    if (Number.isInteger(area)) {
+      return area;
+    } 
+    else {
+      return area.toFixed(2);
+    }
 }
+
 //Area Calculation with 3.14
 function areaForEllipse(value1, value2) {
     const area = 3.14 * value1 * value2;
-    const finalArea = area.toFixed(2);
-    return finalArea;
+    if (Number.isInteger(area)) {
+        return area;
+      } 
+      else {
+        return area.toFixed(2);
+      }
 }
 
 //Triangle Area Calculation
@@ -72,7 +87,7 @@ document.getElementById('triangle-calculate-btn').addEventListener('click', func
     const calculatedArea = areaForTriRhomPentagon(bValue, hValue);
     const title = cardTitle('tri-card-title');
     showResult(title, calculatedArea);
-
+    
 })
 
 //Rhombus Area Calculation
@@ -133,7 +148,7 @@ document.getElementById('ellipse-calculate-btn').addEventListener('click', funct
 })
 
 
-//Random Color
+//Random Background Color Generate
 const geometryComponents = document.querySelectorAll('.geometry-component');
 
 geometryComponents.forEach(geometryComponent => {
