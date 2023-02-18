@@ -33,7 +33,14 @@ function inputValue(value) {
     const inputValue = document.getElementById(value);
     const stringInputValue = inputValue.value;
     const numInputValue = parseFloat(stringInputValue);
-    return numInputValue;
+    if(numInputValue >= 0){
+        return numInputValue;
+    }
+    else{
+        alert('Wrong Input. Please Input Only Positive Numbers.(N.B. Area can not be Negative)');
+        return inputValue();
+    }
+    
 }
 
 //Area Calculation with 0.5
